@@ -1,0 +1,16 @@
+<!DOCTYPE suite System "http://testng.org.testng-1.0.dtd">
+<suite name="runner">
+    <listeners>
+        <listener class-name="config.ReportAdapter"/>
+                </listeners>
+    <test name="runner">
+        <groups>
+            <run>
+                <include name="listener"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="freamwork.*"/>
+        </packages>
+    </test>
+</suite>
